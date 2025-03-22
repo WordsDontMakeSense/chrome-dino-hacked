@@ -7,6 +7,8 @@ input[type="checkbox"] {
   height: 25vh;
   margin: auto;
   display: none;
+  background-color: var(--google-gray-900)!important;
+  border-radius: 1em;
 }
 
 .topRow,
