@@ -61,12 +61,12 @@ document.getElementById("levitation").addEventListener("change", (e) => {
 
 // Speed Listener
 document.getElementById("speed").addEventListener("change", (e) => {
-    Runner.instance_.setSpeed(document.getElementById("speed").value)
+  Runner.instance_.currentSpeed = parseFloat(e.target.value);
 });
 
 // Jump Height Change Listener
 document.getElementById("jumpHeight").addEventListener("change", (e) => {
-    Runner.instance_.tRex.setJumpVelocity(document.getElementById("jumpHeight").value)
+  Runner.instance_.tRex.setJumpVelocity(parseFloat(e.target.value));
 });
 
 function dispatchKey(type, key) {
