@@ -10,11 +10,11 @@
     />
     <title>Chrome Dino Game</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="myStyle.css" />
     <script src="script1.js"></script>
     <script src="script2.js"></script>
     <script src="script3.js"></script>
     <script src="script4.js"></script>
+    <link rel="stylesheet" href="myStyle.css" />
   </head>
 
   <body
@@ -182,7 +182,6 @@
             </div>
           </div>
           <input
-            class="literallyEverythingIveAdded"
             type="checkbox"
             id="hacksEnabled"
             name="hacksEnabled"
@@ -305,7 +304,33 @@
         ></audio
       ></template>
     </div>
-    <div class="myContent"></div>
+    <div id="myContent" class="myContent">
+      <div class="topRow">
+        <div class="myContentItem">
+          <label for="autoplay">Autoplay</label>
+          <input type="checkbox" name="autoplay" id="autoplay" />
+        </div>
+        <div class="myContentItem">
+          <label for="immortal">Immortal</label>
+          <input type="checkbox" name="immortal" id="immortal" />
+        </div>
+        <div class="myContentItem">
+          <label for="levitation">Levitation</label>
+          <input type="checkbox" name="levitation" id="levitation" />
+        </div>
+      </div>
+      <div class="bottomRow">
+        <div class="myContentItem">
+          <label for="speed">Speed</label>
+          <input type="number" name="speed" id="speed" value="10" />
+        </div>
+        <div class="myContentItem">
+          <label for="jumpHeight">Jump Height</label>
+          <input type="number" name="jumpHeight" id="jumpHeight" value="10" />
+        </div>
+      </div>
+      <h3>All "hacks" were derived from <a target="_blank" href="https://mathewsachin.github.io/blog/2016/11/05/chrome-dino-hack.html">Mathew Sachin</a>.</h3>
+    </div>
     <script jstcache="0" src="script5.js"></script>
     <script jstcache="0" src="script6.js"></script>
     <script jstcache="0" src="script7.js"></script>

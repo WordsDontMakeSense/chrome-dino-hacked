@@ -1,11 +1,33 @@
-.literallyEverythingIveAdded{
-    opacity: 1!important;
+input[type="checkbox"] {
+  opacity: 1 !important;
 }
 
-.myContent
-{
-    background: white!important;
-    width: 75vw;
-    height: 25vh;
-    margin: auto;
+.myContent {
+  width: 75vw;
+  height: 25vh;
+  margin: auto;
+  display: none;
+}
+
+.topRow,
+.bottomRow {
+  display: grid;
+  color: white;
+  height: 50%;
+  align-items: center;
+  justify-items: center;
+}
+
+.topRow {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.bottomRow {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
 }
